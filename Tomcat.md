@@ -20,7 +20,7 @@ sudo apt install openjdk-11-jre-headless
 
 # TOMCAT INSTALLATION
 
-**_switching to the root user_**
+**_Switching to the root user_**
 
 sudo su or su -i
 
