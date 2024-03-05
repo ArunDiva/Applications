@@ -1,3 +1,5 @@
+![image](https://github.com/ArunDiva/Applications/assets/154069273/165bfb51-0c6b-4ee3-a0ec-662ec5192705)
+
 Apache Tomcat is a free and open-source software, that acts as both a web server and a servlet container, enabling the execution of Java code and Java-based applications.
 
 # PREREQUISITES
@@ -47,6 +49,7 @@ cd /opt/tomcat9/bin/
 **_And using the below commands we can start and stop the tomcat9 server._**
 
 sh startup.sh or ./startup.sh
+
 sh shutdown.sh or ./shutdown.sh
 
 # CHANGE THE BELOW SETTINGS TO TOMCAT
@@ -77,6 +80,8 @@ vi ./webapps/host-manager/META-INF/context.xml
 
 vi ./webapps/manager/META-INF/context.xml
 
+![tomcat context file](https://github.com/ArunDiva/Applications/assets/154069273/ebe226d9-0b80-4307-9e5f-cb99057ef539)
+
 
 # TOMCAT USER INFORMATION UPDATE
 
@@ -102,6 +107,9 @@ http://ip-address:8080/
 
 **_Tomcat9 welcome page will be displayed._**
 
+![tomcat welcome page](https://github.com/ArunDiva/Applications/assets/154069273/a54d996d-e437-4b33-889a-c8aa73346d78)
+
+
 # YOU CAN ACCESS SERVER STATUS, MANAGER APP, AND HOST MANAGER BY ENTERING TOMCAT USERNAME AND PASSWORD
 
 **_We have changed the username and password in tomcat-users.xml file. Click on Manager App_**
@@ -109,3 +117,5 @@ http://ip-address:8080/
 username="tomcat9" 
 
 password="tomcat9pass"
+
+![tomcat managerui](https://github.com/ArunDiva/Applications/assets/154069273/29026ec7-489a-42d5-b1b9-65b573d749df)
