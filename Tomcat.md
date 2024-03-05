@@ -47,7 +47,6 @@ cd /opt/tomcat9/bin/
 sh startup.sh or ./startup.sh
 sh shutdown.sh or ./shutdown.sh
 
-
 CHANGE THE BELOW SETTINGS TO TOMCAT
 
 # Change the directory to /opt/tomcat9
