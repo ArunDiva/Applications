@@ -1,6 +1,5 @@
 Apache Tomcat is a free and open-source software, that acts as both a web server and a servlet container, enabling the execution of Java code and Java-based applications.
 
-
 Prerequisites
 EC2 instance with your choice of Amazon Linux or Ubuntu is prepared for Tomcat deployment by opening port 8080 in the security group.
 
