@@ -22,49 +22,47 @@ sudo apt install openjdk-11-jre-headless
 
 sudo su or su -i
 
-_This command changes the directory to /opt._
+**_This command changes the directory to /opt._**
 
 cd /opt
 
-_This command uses the wget tool to download a file from the internet._
+**_This command uses the wget tool to download a file from the internet._**
 
 wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.86/bin/apache-tomcat-9.0.86.tar.gz
 
-_This command extracts the downloaded archive using the tar tool._
+**_This command extracts the downloaded archive using the tar tool._**
 
 tar -xvzf apache-tomcat-9.0.86 
 
-_This command renames the extracted folder apache-tomcat-9.0.86 to a simpler name tomcat9._
+**_This command renames the extracted folder apache-tomcat-9.0.86 to a simpler name tomcat9._**
 
 mv apache-tomcat-9.0.86 tomcat9
 
 # START AND STOP THE TOMCAT SERVER
 
-_Execute the below command to change to bin directory in tomcat9_
+**_Execute the below command to change to bin directory in tomcat9_**
 cd /opt/tomcat9/bin/
 
-_And using the below commands we can start and stop the tomcat9 server._
+**_And using the below commands we can start and stop the tomcat9 server._**
 sh startup.sh or ./startup.sh
 sh shutdown.sh or ./shutdown.sh
 
 # CHANGE THE BELOW SETTINGS TO TOMCAT
 
-_Change the directory to /opt/tomcat9_
-
+**_Change the directory to /opt/tomcat9_**
 cd tomcat9
 
-_We need to find Content.xml file and comment the value tag below lines as shown in the image._
-
+**_We need to find Content.xml file and comment the value tag below lines as shown in the image._**
 find -name context.xml
 
-_Below files will be visible_
+**_Below files will be visible_**
 
 ./conf/context.xml
 ./webapps/examples/META-IbbbbNF/context.xml
 ./webapps/host-manager/META-INF/context.xml
 ./webapps/manager/META-INF/context.xml
 
-_ Comment value tag sections in below all files_
+**_ Comment value tag sections below all files_**
 
 vi ./webapps/examples/META-INF/context.xml
 vi ./webapps/host-manager/META-INF/context.xml
@@ -72,30 +70,30 @@ vi ./webapps/manager/META-INF/context.xml
 
 # TOMCAT USER INFORMATION UPDATE
 
-__Change the directory to /opt/tomcat9
+**__Change the directory to /opt/tomcat9**
 
 cd apache-tomcat9/conf
 
-__Open tomcat9 user xml file and update the username and password
+_**Open tomcat9 user XML file and update the username and password**_
 
 vi tomcat-users.xml
 
-__Add below lines between <tomcat-users> tag
+_**Add below lines between <tomcat-users> tag**_
 
 <role rolename="manager-gui"/>
 <user username="tomcat9" password="tomcat9pass" roles="manager-gui"/>
 
 # TOMCAT WELCOME PAGE
 
-_Use Ec2 instance pubic Ip address by using port 8080 and hit _
+**__Use Ec2 instance pubic Ip address by using port 8080 and hit __**
  
 http://ip-address:8080/
 
-_Tomcat9 welcome page will be displayed._ 
+**_Tomcat9 welcome page will be displayed._**
 
 # YOU CAN ACCESS SERVER STATUS, MANAGER APP, AND HOST MANAGER BY ENTERING TOMCAT USERNAME AND PASSWORD
 
-_We have changed the username and password in tomcat-users.xml file. Click on Manager App_
+**_We have changed the username and password in tomcat-users.xml file. Click on Manager App_**
 
 username="tomcat9" 
 password="tomcat9pass"
