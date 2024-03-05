@@ -6,19 +6,19 @@ EC2 instance with your choice of Amazon Linux or Ubuntu is prepared for Tomcat d
 
 # JAVA INSTALLATION
 
-_For Amazon Linux_
+**_For Amazon Linux_**
 
 sudo su - 
 yum install java-openjdk11=latest -y (For Amazon Linux)
 
-_For Ubuntu_
+**_For Ubuntu_**
 
 sudo apt update
 sudo apt install openjdk-11-jre-headless
 
 # TOMCAT INSTALLATION
 
-_switching to the root user_
+**_switching to the root user_**
 
 sudo su or su -i
 
