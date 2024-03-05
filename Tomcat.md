@@ -41,32 +41,42 @@ mv apache-tomcat-9.0.86 tomcat9
 # START AND STOP THE TOMCAT SERVER
 
 **_Execute the below command to change to bin directory in tomcat9_**
+
 cd /opt/tomcat9/bin/
 
 **_And using the below commands we can start and stop the tomcat9 server._**
+
 sh startup.sh or ./startup.sh
 sh shutdown.sh or ./shutdown.sh
 
 # CHANGE THE BELOW SETTINGS TO TOMCAT
 
 **_Change the directory to /opt/tomcat9_**
+
 cd tomcat9
 
 **_We need to find Content.xml file and comment the value tag below lines as shown in the image._**
+
 find -name context.xml
 
 **_Below files will be visible_**
 
 ./conf/context.xml
+
 ./webapps/examples/META-IbbbbNF/context.xml
+
 ./webapps/host-manager/META-INF/context.xml
+
 ./webapps/manager/META-INF/context.xml
 
 **_ Comment value tag sections below all files_**
 
 vi ./webapps/examples/META-INF/context.xml
+
 vi ./webapps/host-manager/META-INF/context.xml
+
 vi ./webapps/manager/META-INF/context.xml
+
 
 # TOMCAT USER INFORMATION UPDATE
 
@@ -81,6 +91,7 @@ vi tomcat-users.xml
 _**Add below lines between <tomcat-users> tag**_
 
 <role rolename="manager-gui"/>
+
 <user username="tomcat9" password="tomcat9pass" roles="manager-gui"/>
 
 # TOMCAT WELCOME PAGE
@@ -96,4 +107,5 @@ http://ip-address:8080/
 **_We have changed the username and password in tomcat-users.xml file. Click on Manager App_**
 
 username="tomcat9" 
+
 password="tomcat9pass"
