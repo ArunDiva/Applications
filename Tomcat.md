@@ -11,7 +11,7 @@ EC2 instance with your choice of Amazon Linux or Ubuntu is prepared for Tomcat d
 **_For Amazon Linux_**
 
 sudo su - 
-yum install java-openjdk11=latest -y (For Amazon Linux)
+yum install java-openjdk11=latest -y 
 
 **_For Ubuntu_**
 
